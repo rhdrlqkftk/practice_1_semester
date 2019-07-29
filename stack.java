@@ -39,14 +39,14 @@ public class Test5 {
 		Stack< Integer> stack = new Stack<>();
 		while(true)
 		{
-			// Á¤Á¡¿¡ ´ëÇÑ ¹æ¹® Ã³¸® 
+			// ì •ì ì— ëŒ€í•œ ë°©ë¬¸ ì²˜ë¦¬ 
 			if( visited[now] == false ) 
 			{
 				System.out.println(now+ " ");
 				visited[now] =true;
 			}
-			// ÇöÀç ¹æ¹® Á¤Á¡°ú ¿¬°áµÈ ÀÎÁ¢ Á¤º¸ Å½»ö. 
-			boolean isGo = false; // now¿¡¼­ ÀÎÁ¢ÇÏ°í °¡º»ÀûÀº ¾ø´Â Á¤Á¡À» Ã£À¸¸é  true·Î ¹Ù²ã¾ßÇÔ. 
+			// í˜„ì¬ ë°©ë¬¸ ì •ì ê³¼ ì—°ê²°ëœ ì¸ì ‘ ì •ë³´ íƒìƒ‰. 
+			boolean isGo = false; // nowì—ì„œ ì¸ì ‘í•˜ê³  ê°€ë³¸ì ì€ ì—†ëŠ” ì •ì ì„ ì°¾ìœ¼ë©´  trueë¡œ ë°”ê¿”ì•¼í•¨. 
 			for (int i = 1; i <=N; i++) 
 			{
 				if( link[now][i]==true && visited[i] ==false)
@@ -57,8 +57,8 @@ public class Test5 {
 					break; 
 				}
 			}	
-			// ¾ÕÀ¸·Î °¥Áö µÚ·Î °¥Áö. 
-			if( stack.isEmpty() && isGo == false) //È®½ÇÇÑ Á¾·á.
+			// ì•ìœ¼ë¡œ ê°ˆì§€ ë’¤ë¡œ ê°ˆì§€. 
+			if( stack.isEmpty() && isGo == false) //í™•ì‹¤í•œ ì¢…ë£Œ.
 			{
 				break;
 			}
