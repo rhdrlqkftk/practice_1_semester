@@ -1,4 +1,4 @@
-﻿package Morning_0813;
+package Morning_0813;
 public class Test_array3 {
 	static int N, M, R;
 	static int[]array = {1324,321,4,23234,5,654,787,32 };
@@ -21,8 +21,8 @@ public class Test_array3 {
 			if( array[j] <array[minIdx])
 			{
 				minIdx = j; 
-				// break 넣으면 절대 안되는구나. 
-				// 이유는 ? 
+				// 이break 넣으면 절대 안되는구나. 
+				// 유는 ? 
 				// minIdx = j를 넣으니까, j값이 계속 바뀌기 때문이다. 
 			}
 		}
