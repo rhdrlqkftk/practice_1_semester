@@ -1,4 +1,4 @@
-﻿package Class;
+package Class;
 
 public class Union_find 
 {
@@ -33,6 +33,7 @@ public class Union_find
 		else
 		{
 			int parent = find( arr, arr[x]);
+			arr[x] =  parent;
 			return parent;
 		}		
 	}
