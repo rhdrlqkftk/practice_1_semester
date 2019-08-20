@@ -26,8 +26,7 @@ public class Test5 {
 		int N = sc.nextInt(); 
 		boolean visited[] = new boolean[N+1];
 		boolean link[][] = new boolean[N+1][N+1];
-		
-		MyStack st = new MyStack();
+
 		for (int i = 0; i < N; i++) 
 		{
 			int n1 = sc.nextInt(); 
