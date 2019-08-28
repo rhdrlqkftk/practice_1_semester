@@ -1,0 +1,12 @@
+ï»¿ìë° EEë¡ ì¤ì 
+https://tomcat.apache.org/download-80.cgi // ë¤ì´ë¡ë 
+https://www.w3schools.com/html/
+
+Client - browser - frontend - static programming.
+Server - webserver( container ) - BackEnd - dynamic programming.
+EIS - DB + MOM(ë©ìì§) + Mail + â¦.  + 14ê°ì§ë¦¬ ìë¹ì¤ 
+( WAS =Web Application Service ) : ws + es + service14 // ìë¶ê² ë§ë ê²? 
+	â¢ Mailì ( Pooling + datasource + JNDI) + JMail 
+ serverì½ëë§ ëëê±°ë¤.
+ssafydp
+//bpm

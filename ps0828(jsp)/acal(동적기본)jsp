@@ -1,0 +1,110 @@
+<%@page import="java.util.Calendar"%>
+<%@ page language="java" contentType="text/html; charset= utf-8"
+    pageEncoding="utf-8"%>
+<% request.setCharacterEncoding("utf-8"); %> 
+<!DOCTYPE html>
+<html lang ="ko">
+<head>
+<meta charset="utf-8">
+<title>acal</title>
+<style type ="text/css">
+
+/* internal */
+#aHello {margin: auto;}
+h3 {color: red; text-align : center;}
+#tHello {margin: auto;}
+</style>
+</head>
+<!--브라우저에 보임  -->
+<%--브라우저에 안보임 --%>
+<body>
+<%
+	Calendar cal = Calendar.getInstance(); 
+	int year = cal.get(Calendar.YEAR);
+	int month = cal.get(Calendar.MONTH)+1; // 0~11 로 되서 1~12로 만듬. 
+	month = 9; 
+	cal.set(year,month-1,1); //1일에 요일을 알면. 
+	String s = String.format ("%d년 %d월", year, month);
+
+	//<div id, class 하나밖에 없으면 id , 여러개 있으면 class다. 
+%>
+<div id ='aHello'> 
+<h3> 아현 칼렌더 </h3>
+
+<table id ='tHello' border ="1px" style = "background-color : #abcdef"> 
+<tr> 
+<td colspan = "7" style ="text-align:center;"><%= s %> </td> 
+</tr>
+<tr> 
+<th style ="color:red;">일</th>
+<th>월</th><th>화</th>
+<th>수</th><th>목</th>
+<th>금</th>
+<th style ="color:blue;">토</th>
+</tr>
+
+<%
+int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK); // 1~7일을 의미한다. 
+%>
+<tr> 
+<%
+for(int i=1 ; i<dayOfWeek;i++)
+{	
+	%>
+	<td> &nbsp;</td>  
+	<%
+}
+int lastDay = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+// 35 - 
+for(int i = 1; i<= 35;  i++)
+{
+	if( i <=lastDay)
+	{
+		if((dayOfWeek-1 +i)%7 ==0)
+		{
+			%>
+			<td style ="color:blue;"> <%= i %></td>
+			<%
+		}
+		else if((dayOfWeek-1 +i)%7 ==1)
+		{
+			%>
+			<td style ="color:red;"> <%= i %></td>
+			<%	
+		}
+		else 
+		{
+			%>
+			<td> <%= i %></td>
+			<%
+		}
+		}
+	else if(  i >lastDay)
+	{
+	%>
+	<td> <%= " " %></td>
+	<%	
+	}
+	// 토요일이면.
+	if((dayOfWeek-1 +i)%7 ==0)
+	{
+		if( i > lastDay)
+		{
+			break;
+		}
+		else
+		{
+			%>
+			</tr><tr>
+			<%
+		}
+	}
+}
+
+%>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
