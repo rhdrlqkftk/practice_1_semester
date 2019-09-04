@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ='ko'>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+ìì´ë¡ ìë ¥íì¸ì! : <input type ="text" id ='nA' /><br/>
+
+<button onclick ="allow()"> ì²«ëë¬¸ìë¡ </button>
+<p id = "demo"> </p>
+<script> 
+
+function allow( )
+{
+	var aa = document.getElementById("nA").value; 
+	aa = aa.toLowerCase();
+	var sin = aa.length;
+	var ab = aa.slice(0,1).toUpperCase(); 
+	ab = ab + aa.slice(1,sin);
+	var result = document.getElementById("demo");
+	result.innerHTML = ab; 
+	
+}
+</script>
+</body>
+</html>
