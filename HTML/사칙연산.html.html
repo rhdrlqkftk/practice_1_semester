@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang ='ko'>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+ì«ì ìë ¥1 : <input type ="text" id ='nA' /><br/>
+ì«ì ìë ¥2 : <input type ="text" id ='nB' /><br/>
+<button onclick ="addFunc()"> ëíê¸° </button>
+<button onclick ="subFunc()"> ë¹¼ê¸°  </button>
+<button onclick ="mulFunc()"> ê³±íê¸° </button>
+<button onclick ="divFunc()"> ëëê¸° </button>
+
+<p id = "demo"> </p>
+<script> 
+//í¨ìë¥¼ ë§ëë ëê°ì§ ë°©ë² 
+//#1
+function addFunc( )
+{
+	var p1 = document.getElementById("nA").value; 
+	var p2 = document.getElementById("nB").value; 
+	var result = document.getElementById("demo");
+	result.innerHTML = parseInt(p1) + parseInt(p2); 
+}
+//#2
+var subFunc=function()
+{
+	var p1 = document.getElementById("nA").value; 
+	var p2 = document.getElementById("nB").value; 
+	var result = document.getElementById("demo");
+	result.innerHTML = p1 - p2; 
+}
+function mulFunc( )
+{
+	var p1 = document.getElementById("nA").value; 
+	var p2 = document.getElementById("nB").value; 
+	var result = document.getElementById("demo");
+	result.innerHTML = p1 * p2; 
+}
+function divFunc()
+{
+	var p1 = document.getElementById("nA").value; 
+	var p2 = document.getElementById("nB").value; 
+	var result = document.getElementById("demo");
+	result.innerHTML = p1 / p2; 
+}
+</script>
+</body>
+</html>
