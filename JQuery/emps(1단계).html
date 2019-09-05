@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ='ko'>
+<head>
+<meta charset="utf-8">
+<title>emps</title>
+
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	  $("#hidebtn").click(function(){
+		  $("#showemp").hide();
+	  });
+});
+$(document).ready(function(){
+  $("#showbtn").click(function(){
+	$("#showemp").show();
+    $.get("http://192.168.28.129:8197/ssafyvue/api/findAllEmployees", 
+    		function(emps, status) {
+      var len  = emps.length; 
+      
+      var table = document.createElement("table");
+      $(table).attr("id", "t01");
+      var tr2 = document.createElement("tr");
+      var th1 = document.createElement("th");
+      $(th1).html("ìì´ë");
+      var th2 = document.createElement("th");
+      $(th2).html("ì´ë¦");
+      var th2 = document.createElement("th");
+      $(th3).html("ìë¬´");
+      var th2 = document.createElement("th");
+      $(th4).html("ë¶ì");
+      
+      $(tr2).append(th1, th2, th3,th4);
+      $(table).append(tr2);
+      for(var i =0 ; i< len; i++)
+      {
+   		 var tr = document.createElement("tr");
+   		 var td1 = document.createElement("td");
+   		 $(td1).html(emps[i].id);
+   		 
+  		 var td2 = document.createElement("td");
+  		 $(td2).html(emps[i].name);
+  		 
+  		 var td3 = document.createElement("td");
+  		 $(td3).html(emps[i].title);
+  		 
+  		 var td4 = document.createElement("td");
+  		 $(td4).html(emps[i].dept_name);
+  		 $(table).append(tr);
+      }
+      $("#showemp").append(table);	
+    });
+  });
+});
+</script> 
+</head>
+
+<body>
+<button id ='showbtn'>ëª¨ë  ì¬ì ë³´ê¸°</button>
+<button id ='hidebtn'>ì¬ì ì¨ê¸°ê¸°</button>
+<div id='showemp'></div>
+
+
+</body>
+</html>

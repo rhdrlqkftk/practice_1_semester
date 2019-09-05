@@ -1,0 +1,51 @@
+ï»¿[9/5] 
+jQuery CDN 
+// ì´ë²¤í¸ë ëê°ì§ ì¢ë¥ 
+p.on (     ) // ì¬ë¬ê°ë¥¼ ë£ì ì ìë¤. 
+p.click( )  //íëë§ ë£ì ì ìë¤.  
+form ë°ì´í°, 
+input ê³ì´. . ììë§ .val()ê° ìë¤.
+---- ìë°ì¤í¬ë¦½í¸ë¡ ë°ê¿ì¤ë¼ eval( )  
+= attr("href") // hrefë¥¼ ê°ì ¸ì!!!! 
+-----------------------------------------
+- parent( ) 
+- parents( ) 
+- parentsUntil( )
+- h2.siblings() => h2 ìê¸° ìì ì ëºë¤. 
+-----------------------------------------
+ê³µì¥ ìëíë C#  
+ì ì , íµì  ìë¹ì¤ë C++ 
+DBë¡ ë¤ì´ì¤ëê±´ JAVA  //ì¬ëì ê°ê¹ì´ ê². 
+-----------------------------------------
+
+: window.load
+$( "p").hide( ); // ëª¨ë  pë¥¼ ì¨ê¸´ë¤. 
+jQueryë¬¸ë².
+ https://www.w3schools.com/jquery/jquery_selectors.asp
+
+[9/4]
+1. ìë° ì¤í¬ë¦½í¸ . 
+<< https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst >> 
+
+
+[íë¡ì í¸ ë§ë¤ê¸° ]
+file -> new -> dinamic web project 
+
+[ì°¸ê³ ì©]
+https://www.w3schools.com/cssref/css_selectors.asp
+
+ë°ìí ì¹
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_page
+
+
+ìë° EEë¡ ì¤ì 
+https://tomcat.apache.org/download-80.cgi // ë¤ì´ë¡ë 
+https://www.w3schools.com/html/
+
+Client - browser - frontend - static programming.
+Server - webserver( container ) - BackEnd - dynamic programming.
+EIS - DB + MOM(ë©ìì§) + Mail + â¦.  + 14ê°ì§ë¦¬ ìë¹ì¤ 
+( WAS =Web Application Service ) : ws + es + service14 // ìë¶ê² ë§ë ê²? 
+	â¢ Mailì ( Pooling + datasource + JNDI) + JMail 
+ serverì½ëë§ ëëê±°ë¤.
+ssafydp
