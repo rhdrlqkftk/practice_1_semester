@@ -1,51 +1,51 @@
-ï»¿[9/5] 
+[9/5] 
 jQuery CDN 
-// ì´ë²¤í¸ë ëê°ì§ ì¢ë¥ 
-p.on (     ) // ì¬ë¬ê°ë¥¼ ë£ì ì ìë¤. 
-p.click( )  //íëë§ ë£ì ì ìë¤.  
-form ë°ì´í°, 
-input ê³ì´. . ììë§ .val()ê° ìë¤.
----- ìë°ì¤í¬ë¦½í¸ë¡ ë°ê¿ì¤ë¼ eval( )  
-= attr("href") // hrefë¥¼ ê°ì ¸ì!!!! 
+// 이벤트는 두가지 종류 
+p.on (     ) // 여러개를 넣을 수 있다. 
+p.click( )  //하나만 넣을 수 있다.  
+form 데이터, 
+input 계열. . 안에만 .val()가 있다.
+---- 자바스크립트로 바꿔줘라 eval( )  
+= attr("href") // href를 가져와!!!! 
 -----------------------------------------
 - parent( ) 
 - parents( ) 
 - parentsUntil( )
-- h2.siblings() => h2 ìê¸° ìì ì ëºë¤. 
+- h2.siblings() => h2 자기 자신은 뺀다. 
 -----------------------------------------
-ê³µì¥ ìëíë C#  
-ì ì , íµì  ìë¹ì¤ë C++ 
-DBë¡ ë¤ì´ì¤ëê±´ JAVA  //ì¬ëì ê°ê¹ì´ ê². 
+공장 자동화는 C#  
+전자 , 통신 서비스는 C++ 
+DB로 들어오는건 JAVA  //사람에 가까운 것. 
 -----------------------------------------
 
 : window.load
-$( "p").hide( ); // ëª¨ë  pë¥¼ ì¨ê¸´ë¤. 
-jQueryë¬¸ë².
+$( "p").hide( ); // 모든 p를 숨긴다. 
+jQuery문법.
  https://www.w3schools.com/jquery/jquery_selectors.asp
 
 [9/4]
-1. ìë° ì¤í¬ë¦½í¸ . 
+1. 자바 스크립트 . 
 << https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst >> 
 
 
-[íë¡ì í¸ ë§ë¤ê¸° ]
+[프로젝트 만들기 ]
 file -> new -> dinamic web project 
 
-[ì°¸ê³ ì©]
+[참고용]
 https://www.w3schools.com/cssref/css_selectors.asp
 
-ë°ìí ì¹
+반응형 웹
 https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_page
 
 
-ìë° EEë¡ ì¤ì 
-https://tomcat.apache.org/download-80.cgi // ë¤ì´ë¡ë 
+자바 EE로 설정
+https://tomcat.apache.org/download-80.cgi // 다운로드 
 https://www.w3schools.com/html/
 
 Client - browser - frontend - static programming.
 Server - webserver( container ) - BackEnd - dynamic programming.
-EIS - DB + MOM(ë©ìì§) + Mail + â¦.  + 14ê°ì§ë¦¬ ìë¹ì¤ 
-( WAS =Web Application Service ) : ws + es + service14 // ìë¶ê² ë§ë ê²? 
-	â¢ Mailì ( Pooling + datasource + JNDI) + JMail 
- serverì½ëë§ ëëê±°ë¤.
+EIS - DB + MOM(메시지) + Mail + ….  + 14개짜리 서비스 
+( WAS =Web Application Service ) : ws + es + service14 // 잘붙게 만든것? 
+	• Mail은 ( Pooling + datasource + JNDI) + JMail 
+ server코드만 도는거다.
 ssafydp
