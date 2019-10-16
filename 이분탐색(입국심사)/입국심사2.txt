@@ -1,4 +1,4 @@
-ï»¿package ssafy1016;
+package ssafy1016;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
-//ë¬´ìì ë¬¼ì´ë³´ë ë¬¸ì ì¸ê°? 
+//무엇을 물어보는 문제인가? 
 import java.util.Scanner;
 import java.util.StringTokenizer;
 	public class wg {
@@ -21,34 +21,34 @@ import java.util.StringTokenizer;
 	        StringTokenizer st =null;
 	  
 	        st = new StringTokenizer(br.readLine());
-	        N = Integer.parseInt(st.nextToken());  // ì¬ì¬ë ê°¯ì
-	        M = Integer.parseInt(st.nextToken()); // ì¬ë ì .
-	        int [] times = new int[N]; // ìê° ì´ë ì´ 
+	        N = Integer.parseInt(st.nextToken());  // 심사대 갯수
+	        M = Integer.parseInt(st.nextToken()); // 사람 수 .
+	        int [] times = new int[N]; // 시간 어레이 
 	        min = Integer.MAX_VALUE;
 	        for(int i=0; i < N; i++)
 	        {
-	            times[i] = Integer.parseInt(br.readLine());  // ì¬ì¬ë ê°¯ìë³ ê±¸ë¦¬ë ìê°. 
-	            min = Math.min(min,times[i]); // ìµëê°ì ì ì¥íë¤. 
+	            times[i] = Integer.parseInt(br.readLine());  // 심사대 갯수별 걸리는 시간. 
+	            min = Math.min(min,times[i]); // 최대값을 저장한다. 
 	        }
 	        long left =1; 
-	        long right = min *(long)M ; // ìµë ê±¸ë¦¬ë ìê°. 
-	        //ì¬ë ì * max ë¥¼ í ê²ì´ ì ì¼ ì¤ë¥¸ ìª½ì´ëê¹? 
+	        long right = min *(long)M ; // 최대 걸리는 시간. 
+	        //사람 수 * max 를 한 것이 제일 오른 쪽이니까? 
 	        long total=0, mid =0;
 	        long result = 0;
 	        while( left <= right)
 	        {
-	            mid = (left +right)/2;  // ë¯¸ëë³´ë¤ ìê² ê±¸ë¦¬ë?  
+	            mid = (left +right)/2;  // 미드보다 작게 걸리나?  
 	            total =0 ; 
-	            for(int k =0 ; k <N; k++) //ì¬ì¬ë ê°¯ì. 
+	            for(int k =0 ; k <N; k++) //심사대 갯수. 
 	            {
-	                total += mid/times[k]; ///totalì ì²ë¦¬í  ì ìë ì¬ë ìë¥¼ ìë¯¸íë¤. 
-	                // ì´ê² Më³´ë¤ í¬ë©´ ì¤ì¬ì¼ê² ì§. 
+	                total += mid/times[k]; ///total은 처리할 수 있는 사람 수를 의미한다. 
+	                // 이게 M보다 크면 줄여야겠지. 
 	                if( total > M )
 	                {
 	                    break;
 	                }
 	            }
-	            if( total < M) // totalì´ ì¬ëì ë³´ë¤ ìì ë! 
+	            if( total < M) // total이 사람수 보다 작을 때! 
 	            {
 	                left = mid +1;
 	            }
@@ -57,6 +57,6 @@ import java.util.StringTokenizer;
 	                right = mid -1; 
 	            }
 	        }
-	        System.out.println(left); // ëª¨ë ì¬ëì´ íµê³¼íë ìµìê°. 
+	        System.out.println(left); // 모든사람이 통과하는 최소값. 
 	    }
 	}
