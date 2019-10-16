@@ -60,3 +60,11 @@ import java.util.StringTokenizer;
 	        System.out.println(left); // 모든사람이 통과하는 최소값. 
 	    }
 	}
+
+//풀이 : while(left<=right) 해주는 이유는 정확한 판단을 위해서 사용하는 방법이다. 
+ // left와 right가 역전되기전 값 left =9, right가 9라면, left가 10이 되었을 때, 그 10이 가장 최소값이 되기 때문이다. 
+ // 만약 위 문제에서 else if ( total == M )으로 만들었다면 , left =27 , right =31 이라면 mid는 29인데 최소값은 28이다. 
+ // 이처럼 27과 31 사이의 값중에 다른값이 되는지 left,right를 올리고 내려가며 정확하게 판단을 해야하기 때문에 while( left <= right)를 써주고, if( 작았을때 ), else ( 크고 같을 때)
+ // 나누게 됨
+ 
+
