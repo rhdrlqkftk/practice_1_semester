@@ -1,0 +1,62 @@
+ï»¿package ssafy1016;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
+//ë¬´ìì ë¬¼ì´ë³´ë ë¬¸ì ì¸ê°? 
+import java.util.Scanner;
+import java.util.StringTokenizer;
+	public class wg {
+	    static int N, M,K; 
+	    static int min; 
+	    public static void main(String[] args) throws NumberFormatException, IOException 
+	    {
+	//      Scanner sc = new Scanner(System.in);
+	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	        StringTokenizer st =null;
+	  
+	        st = new StringTokenizer(br.readLine());
+	        N = Integer.parseInt(st.nextToken());  // ì¬ì¬ë ê°¯ì
+	        M = Integer.parseInt(st.nextToken()); // ì¬ë ì .
+	        int [] times = new int[N]; // ìê° ì´ë ì´ 
+	        min = Integer.MAX_VALUE;
+	        for(int i=0; i < N; i++)
+	        {
+	            times[i] = Integer.parseInt(br.readLine());  // ì¬ì¬ë ê°¯ìë³ ê±¸ë¦¬ë ìê°. 
+	            min = Math.min(min,times[i]); // ìµëê°ì ì ì¥íë¤. 
+	        }
+	        long left =1; 
+	        long right = min *(long)M ; // ìµë ê±¸ë¦¬ë ìê°. 
+	        //ì¬ë ì * max ë¥¼ í ê²ì´ ì ì¼ ì¤ë¥¸ ìª½ì´ëê¹? 
+	        long total=0, mid =0;
+	        long result = 0;
+	        while( left <= right)
+	        {
+	            mid = (left +right)/2;  // ë¯¸ëë³´ë¤ ìê² ê±¸ë¦¬ë?  
+	            total =0 ; 
+	            for(int k =0 ; k <N; k++) //ì¬ì¬ë ê°¯ì. 
+	            {
+	                total += mid/times[k]; ///totalì ì²ë¦¬í  ì ìë ì¬ë ìë¥¼ ìë¯¸íë¤. 
+	                // ì´ê² Më³´ë¤ í¬ë©´ ì¤ì¬ì¼ê² ì§. 
+	                if( total > M )
+	                {
+	                    break;
+	                }
+	            }
+	            if( total < M) // totalì´ ì¬ëì ë³´ë¤ ìì ë! 
+	            {
+	                left = mid +1;
+	            }
+	            else  
+	            {
+	                right = mid -1; 
+	            }
+	        }
+	        System.out.println(left); // ëª¨ë ì¬ëì´ íµê³¼íë ìµìê°. 
+	    }
+	}
