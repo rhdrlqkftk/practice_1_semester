@@ -26,7 +26,7 @@ public , protected, default ( 동일패키지 , 클래스 내부 ) ,private
 
 
 
-유상통 자바 _ 문제 풀이 인강 좋다( 상속 편 )
+
 오버라이딩 
 부모 A, 자식 B라고 할때 
 B는 " 오버라이딩 해서 나는 아버지 처럼 살기 싫어 " 해서 자기꺼대로 바꿔 쓴다. 
@@ -38,5 +38,9 @@ static이 그 예외야.
 A에 static void f가 있고 B에도 f가 있다면, 부모꺼를 써야한다. 
 A에 그냥 void f가 있고 B에도 f가 있었다면, 자식f를 써야한다. 
 
-
+유상통 자바 _ 문제 풀이 인강 좋다( 상속 편 )
 https://youtu.be/5ohUT4LEOWI
+
+
+유상통( 인터페이스 문제 : 8:11)
+https://youtu.be/dsF4g0lvXIY
