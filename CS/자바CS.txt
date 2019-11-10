@@ -26,6 +26,7 @@ public , protected, default ( 동일패키지 , 클래스 내부 ) ,private
 
 
 
+*오버라이딩을 다형성이라고 함. 
 
 오버라이딩 
 부모 A, 자식 B라고 할때 
@@ -46,7 +47,30 @@ https://youtu.be/5ohUT4LEOWI
 https://youtu.be/dsF4g0lvXIY
 
 
+
+
 [기타 지식]
 자바에서 int value; 라고 되어 있다면,  0으로 초기화되어있는 것이다.
 자바에서 equals는 객체(=값)가 같냐는 질문. 
 == 는 주소가 같냐는 질문. 
+*객체 지향 언어: java, c++, python pascal(다형성 지원 x ), c#, objective-c 
+*Python : 높은 효율, 쉬 사용, 확장성 ( 인터프리터 식 대화형 언어 ) 
+
+*Java에는 다중 상속을 지원하지 않는다. 
+*연산자 다중 정의도 지원하지 않고 define,  typedef이런거 안쓴다. 
+ a >> 2  = a *(1/4) 
+ a << 3  = a *(2^3) 
+
+*서버 언어 : ASP, JSP, CGI, PHP 
+*클라이언트 언어 : javaScript , VBScript 등이 있음. 
+
+
+*고급언어의 컴파일 단계 
+어휘분석( token 단위로 분리 ) -> 
+구문분석(어희의 에러를 찾고 에러가 없는 문장을 구문 구조로 구성) -> 
+의미분석(의미오류를 검사) -> 코드 최적화 -> 목적코드 생성 . 
+
+
+ 
+
+
