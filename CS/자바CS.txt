@@ -44,3 +44,9 @@ https://youtu.be/5ohUT4LEOWI
 
 유상통( 인터페이스 문제 : 8:11)
 https://youtu.be/dsF4g0lvXIY
+
+
+[기타 지식]
+자바에서 int value; 라고 되어 있다면,  0으로 초기화되어있는 것이다.
+자바에서 equals는 객체(=값)가 같냐는 질문. 
+== 는 주소가 같냐는 질문. 
