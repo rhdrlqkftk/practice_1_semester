@@ -1,0 +1,97 @@
+1. web.xml을 수행하면서 (cll ,ds, cef)를 한번 읽고 a.do때문에spring container로 들어가는데 
+   벽에 부딪히면서 Mx 환겨병수를 한번 읽어드린다.
+2. init()에 의해서 ds패쳐가 불리고 Vx, Cx, Aop 환경변수를 한번 읽는다.
+-------------------------------------------------------------------------------------
+
+
+Html + Data =  restful?에서 처리. 
+*원래 데이터는 jsp에서 처리했는데 jsp를 없애고(view를 없앰 ) 브라우저에서 처리한다( spring boot )
+* 브라우저에서 렌더링하고 , js가 조립을 하고 ajax를 이용한다.
+
+
+jquery = $()
+jstl =${}
+vue = {{}}
+var a = new Vue()
+{   
+       data : n 	
+   (el 필요 )     
+}
+---------------------------
+(1) *view (templete) 
+
+(2) 1~3사이에 원래는 viewModel인데 이를 controller로 부른다. 
+var a = new Vue()
+{
+   data : n; 
+   el : ~
+}
+*life - cycle이 존재한다. ( created, mounted, updated)
+=> create , hook 메소드가 불리면 비동기 통신을 하겠다. 
+=> mounted 해서 axios해서 restful에서 가져와서 Model로 전달한다. 
+(3 )Model 
+- data{view <---> Model}
+- {{}} :  v-html : <>태그 사이에 있는거를 꺼내준다. <>
+v-text : 텍스트 그대로 꺼내준다/ 
+v-bind : 단방향, span, div, label ( 모델 데이터를 span등 사이로 뿌려주는 기능) 
+v-model: 양방향, input, 
+v-on : 이벤트 
+form데이터는 양방향이 가능
+input ( 값 ) <--------------> model  // 양방향으로 데이터가 되고 , 값이되고 한다. 
+
+node.js란? 
+*sendbox 원리, 클라이언트 코드인데 서버 코드에 접근할 수 있다. 
+javascript인데 ? java처럼 서버를 만들 수 있는 언어다. 
+
+----------------------------
+title | toH3 
+filters: {           // 있는 값 중에서 가공해서 뿌려 줄때 
+    	  toH3 (value) {
+    		 var s="";
+    		 for(i=0;i<3; i++){
+    			 s+=value;
+    		 }
+	         return s;
+	       }
+      }
+
+vue에서는 root를 하나 가진다. 
+
+1. 자바 물어보기.
+
+2개 같은거다.
+v-on :click ="changeMyName" 
+@click= "changeMyName" 
+
+
+
+
+cd c:/
+mkdir vueproject
+cd C:\vueproject
+npm install -g npm
+npm install -g @vue/cli
+vue create hellovues
+defualt 선택(엔터)
+cd hellovues
+npm install axios --save
+npm install vue-router --save
+npm install vuex ?-save
+npm install d3 ?-save
+vue add element
+y full ko 
+npm run serve
+
+cd C:\vueproject\hellovues
+src public 삭제 엎어치기
+npm run serve
+
+
+
+cd C:\vueproject\hellovues2
+package.json
+package-lock.json
+의 이름을 hellovues2로
+src public 삭제 엎어치기
+
+npm run serve
