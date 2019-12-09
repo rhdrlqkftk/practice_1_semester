@@ -26,3 +26,9 @@ GET VS POST
  특징: 크기가 제한적이고 보안에 위협이 있지만, 빠르다. 
 
  POST 방식의 request 는 HTTP Message의 Body 부분에 데이터가 담겨서 전송
+
+
+ 스프링 정의? 
+
+ 스프링 과정? https://kim6394.tistory.com/161
+ 
