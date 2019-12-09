@@ -10,3 +10,11 @@ Queue : First In First Out (FIFO)
 
 해쉬 테이블 : 키와 벨류를 가지고 hash function에 의해서 
 빠른 검색 속도를 갖는다. 시간복잡도가 O(1)이다. 
+
+
+
+
+
+프림 알고리즘 
+
+크루스칼 알고리즘 
