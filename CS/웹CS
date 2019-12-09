@@ -18,3 +18,11 @@ API 설계의 중심에 자원(Resource)이 있고 , GET(조회), POST(생성), 
 JSP vs SERVLET 
 
 => Servlet은 톰캣과 같은 서버 위에서 동작하는 순수 java 프로그램이고, JSP는 클라이언트 단에서 html과 java코드를 쓰는 스크립트 언어로서 View단에서 역할을 한다.   
+
+
+GET VS POST
+
+ GET 방식은 요청하는 데이터가 HTTP Request Message의 Header 부분의 url 에 담겨서 전송.
+ 특징: 크기가 제한적이고 보안에 위협이 있지만, 빠르다. 
+
+ POST 방식의 request 는 HTTP Message의 Body 부분에 데이터가 담겨서 전송
