@@ -32,16 +32,16 @@ import java.util.StringTokenizer;
 	        }
 	        long left =1; 
 	        long right = min *(long)M ; // 최대 걸리는 시간. 
-	        //사람 수 * max 를 한 것이 제일 오른 쪽이니까? 
+	        // 사람 수 * max 를 한 것이 제일 오른 쪽이니까? 
 	        long total=0, mid =0;
 	        long result = 0;
 	        while( left <= right)
 	        {
 	            mid = (left +right)/2;  // 미드보다 작게 걸리나?  
 	            total =0 ; 
-	            for(int k =0 ; k <N; k++) //심사대 갯수. 
+	            for(int k =0 ; k <N; k++) // 심사대 갯수. 
 	            {
-	                total += mid/times[k]; ///total은 처리할 수 있는 사람 수를 의미한다. 
+	                total += mid/times[k]; // total은 처리할 수 있는 사람 수를 의미한다. 
 	                // 이게 M보다 크면 줄여야겠지. 
 	                if( total > M )
 	                {
